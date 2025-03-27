@@ -3,50 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surya Pavan B. Pisipati - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <meta name="description" content="Surya Pavan B. Pisipati - Full Stack Developer Portfolio">
+    <title>Surya Pavan B. Pisipati | Full-Stack Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/app.js" defer></script>
 </head>
 <body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <!-- Header -->
     <header class="header">
         <nav class="nav container">
-            <div class="nav-brand">SPBP</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div class="nav-brand">
+                <a href="/">SPBP</a>
+            </div>
+            
+            <ul class="nav-menu" role="navigation" aria-label="Main Navigation">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <button class="hamburger" aria-label="Toggle navigation">☰</button>
+
+            <div class="hamburger" aria-label="Mobile Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
-    <main class="container">
-        <section id="hero" class="hero">
-            <h1>Surya Pavan Bharadwaj Pisipati</h1>
-            <h2>Full-Stack Developer | Java & JavaScript Specialist</h2>
-            <div class="contact-info">
-                <a href="mailto:suryapisipatiu@gmail.com">suryapisipatiu@gmail.com</a>
-                <a href="tel:+12342819267">+1 (234) 281-9267</a>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Surya Pavan Bharadwaj Pisipati</h1>
+                    <p class="hero-subtitle">Full-Stack Developer | Java & JavaScript Specialist</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn">Get in Touch</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="about" class="section">
-            <h2>Summary</h2>
-            <p>Enthusiastic full-stack developer with over 7 years of experience in JavaScript and Java, specialized in building custom web and mobile identity solutions.</p>
-        </section>
-
-        <!-- Other sections (Skills, Experience, Projects, Education) structured similarly -->
+        <!-- Dynamic Sections will be populated by JavaScript -->
+        <div id="sections-container" class="container"></div>
     </main>
 
-    <footer id="contact" class="footer">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/surya-pisipati-319bb4163/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-            </div>
-            <p class="copyright">&copy; 2023 Surya Pavan B. Pisipati</p>
+            <!-- Dynamic Footer Content -->
         </div>
     </footer>
 </body>
